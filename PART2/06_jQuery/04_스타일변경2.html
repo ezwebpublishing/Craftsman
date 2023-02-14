@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일 변경</title>
+    <style>
+        body{padding: 20px;}
+    </style>
+</head>
+
+<body>
+    <h1>Main Title</h1>
+    <h2>Content Title</h2>
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script>
+    let contentTT = $('h2');
+
+    contentTT.css({
+        color:'blue',
+        opacity:0.5,
+        fontSize:'40px',
+        transformOrigin:'0 0',
+        transform: 'rotate(20deg)'
+    });
+    </script>
+</body>
+</html>
