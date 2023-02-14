@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"content="IE=edge">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <title>객체</title>
+</head>
+<body>
+  <h1>객체</h1>
+  <script>
+    /*
+    let s1 = {}; //빈 객체 생성 후 값 추가
+    s1.kor = 100;
+    s1.eng = 90;
+    s1.math = 80;
+    */
+    let s1= { //객체 생성과 동시에 값 생성
+      kor:100,
+      eng:90,
+      math:80,
+      total:function() {
+        let sum = this.kor+this.eng+this.math;
+        return sum;
+      }
+    }
+    document.write(s1.total());
+  </script>
+</body>
+</html>
