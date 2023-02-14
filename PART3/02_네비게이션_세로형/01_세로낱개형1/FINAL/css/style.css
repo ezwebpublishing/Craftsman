@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+*{
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+	text-decoration:none; 
+	font-family:"맑은 고딕"; 
+	font-size:14px;
+	color:#333;
+}
+.cf:after{
+	content:'';
+	display: block;
+	clear:both;
+}
+/* wireframe */
+.wrapper{
+	width: 1000px;
+	height: 650px;
+}
+.wrapper aside{
+	width: 200px;
+	height: 100%;
+	float: left;
+	background: #aaa;
+}
+.wrapper main{
+	width: 800px;
+	float: right;
+	height: 100%;
+	background: #bbb;
+}
+/* aside */
+aside .logo{
+	height: 100px;
+	background: #999;
+}
+aside nav{ 
+	background: #333;
+	width: 180px;
+	margin:10px 0 0 10px;
+	position: relative;
+	z-index:1;
+}
+aside nav > ul li {
+	line-height: 40px;
+	text-align: center;
+}
+aside nav > ul li a{
+	display: block;
+	color: #fff;
+}
+
+ aside nav > ul ul{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 100%;
+	background: #ccc;
+	display: none;	
+} 
+
+/* Main Contents */
+main .slides {
+	height: 350px;
+	background: #777;
+}
+.contents > div {
+	float:left;
+	width:33.33333%;
+	height: 200px;
+}
+.contents .notice{
+	background: #666;
+}
+.contents .gallery{
+	background: #555;
+}
+.contents .quick_links{
+	background: #444;
+}
+
+/* Footer */
+footer .copyright{
+	float: left;
+	width: 200px;
+	background: #333;
+}
+footer .sns{
+	float: right;
+	width: 600px;
+	background: #222;
+}

@@ -1,0 +1,302 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+    /* 
+    main color #FCA148
+    sub color #49D2FC
+    text color #333
+    */
+}
+
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+/* wireframe */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+}
+
+.slides {
+    height: 300px;
+    background: #bbb;
+}
+
+main {
+    height: 200px;
+    background: #fff;
+    padding: 10px 0;
+}
+
+footer {
+    height: 100px;
+    background: #ddd;
+}
+
+/* header */
+header .logo {
+    width: 200px;
+    float: left;
+    /* height: 100%; */
+    padding-top: 30px;
+}
+
+/* Navigation */
+header nav {
+    float: right;
+    width: 720px;
+    margin-top: 30px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+nav>ul>li {
+    line-height: 40px;
+    float: left;
+    width: 180px;
+    text-align: center;
+    position: relative;
+}
+
+nav>ul>li a {
+    color: #fff;
+    display: block;
+    background: #333;
+}
+
+nav ul ul li a {
+    background: #fff;
+    display: block;
+    color: #333;
+}
+
+nav>ul>li a:hover {
+    background: #FCA148;
+}
+nav ul ul a:hover{
+    background: #49D2FC;
+}
+
+nav ul ul {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+
+/* Main Contents */
+main section {
+    width: 400px;
+    float: left;
+    height: 100%;
+}
+
+
+
+/* Slides */
+.slides {
+    overflow: hidden;
+    height: 300px;
+}
+
+slides>ul {
+    height: 900px;
+}
+
+.slide {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+
+.slide h2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: rgba(0, 0, 0, .8);
+    padding: 10px 25px;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+/* TAB */
+.tabmenu {
+    position: relative;
+    z-index: 1;
+    top: 1px;
+}
+
+.tabmenu li {
+    float: left;
+}
+
+.tabmenu li a {
+    display: block;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #ccc;
+}
+
+.tabmenu li.active a {
+    background: #fff;
+}
+
+.tabcontent {
+    padding: 10px;
+    border: 1px solid #ccc;
+    position: relative;
+    height: 150px;
+}
+
+.tabcontent>div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.tabcontent>div.active {
+    display: block;
+}
+
+#notice {
+    padding: 0 10px;
+}
+
+#notice li {
+    line-height: 30px;
+}
+
+#notice li span {
+    float: right;
+}
+
+#notice li:nth-child(even) {
+    background: #ccc;
+}
+
+#notice li a:hover {
+    font-weight: bold;
+}
+
+#gallery {
+    padding: 20px;
+}
+
+#gallery ul li {
+    float: left;
+    margin-right: 40px;
+}
+
+#gallery ul li:last-child {
+    margin-right: 0;
+}
+/* Banner links */
+.banner, .quick_links{
+    position: relative;  
+    padding: 0 10px; 
+    overflow: hidden;
+}
+.quick_links{
+    padding: 0;
+}
+.banner h2,
+.quick_links h2{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    padding: 10px 20px;    
+}
+.banner img,
+.quick_links img{
+    width: 100%;
+}
+.banner a:hover,
+.quick_links a:hover{
+    opacity: 0.5;
+}
+/* Footer */
+footer{
+    background: #ebebeb;
+}
+footer div {
+    float: left;
+    height: 100%;
+}
+footer .logo {
+    width: 200px;
+    padding: 30px 0 0 20px;
+}
+footer .copyright {
+    width: 800px;
+    text-align: center;
+    line-height: 100px;
+}
+footer .sns {
+    width: 200px;
+    float: left;
+    padding-top: 24px;
+} 
+footer .sns li{
+    float:left;    
+}
+footer .sns li + li{
+    margin-left: 10px;
+}
+/* popup */
+#popup{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+    z-index:10;
+}
+#popup .popup_content{
+	width: 400px;
+	padding: 20px 20px 100px;
+	background: #fff;
+	border-radius:5px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%, -50%);
+	box-shadow:0 0 3px rgba(0,0,0,.5);	
+}
+#popup .popup_content .close{
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	background: #333;
+	color: #fff;
+	cursor: pointer;
+	padding: 5px 8px;
+}
+#popup.active{
+	display: block;
+}
