@@ -1,21 +1,23 @@
 @charset "utf-8";
-*{
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
     box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background: #fff;
-    color:#333;
-}
+
 a{
-    text-decoration: none;
     color: inherit;
 }
 .hidden{
     display: none;
 }
 /* LAYOUT */
-.container{}
+
 main{
     display: flex;
 }
@@ -40,10 +42,10 @@ aside nav{
     height: 400px;
 }
 /* SLIDES */
-.slide{
+.slide_wrapper{
     display: flex;
 }
-.slide > *{
+.slide_wrapper > *{
     border:1px solid #ccc;
     height: 400px;
 }
@@ -53,7 +55,7 @@ aside nav{
 }
 /* News Gallery */
 
-.news_gallery{}
+
 .news_gallery{
     display: flex;
 }
@@ -62,8 +64,6 @@ aside nav{
     height: 250px;
     flex:1;
 }
-.news{}
-.gallery{}
 
 /* Footer */
 footer{

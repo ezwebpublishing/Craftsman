@@ -1,16 +1,17 @@
 @charset "utf-8";
-
-body{
+* {
     margin: 0;
-    background: #fff;
-    color: #333;
-}
-a{
+    padding: 0;
+    list-style: none;
     text-decoration: none;
-    color: inherit;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
 }
-*{
-    box-sizing:border-box;
+
+a{
+    color: inherit;
 }
 
 /* Layout */
@@ -38,7 +39,7 @@ aside nav{height: 400px;}
 aside .spot-menu{height: 50px;}
 
 /* SLIDE */
-.slide{
+.slide_wrapper{
     height: 400px;    
     position: relative;
 }

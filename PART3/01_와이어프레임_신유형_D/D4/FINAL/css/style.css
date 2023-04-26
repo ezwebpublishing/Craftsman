@@ -1,14 +1,16 @@
 @charset "utf-8";
-*{
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
     box-sizing: border-box;
 }
-body{
-    margin: 0;
-    background: #fff;
-    color:#333;
-}
+
 a{
-    text-decoration: none;
     color: inherit;
 }
 .hidden{
@@ -16,7 +18,6 @@ a{
 }
 
 /* Layout */
-.container{}
 main{
     display: flex;   
 }
@@ -43,7 +44,7 @@ aside nav{
 }
 
 /* Slides */
-.slides{
+.slide_wrapper{
     height: 400px;
 }
 .slide-image{
