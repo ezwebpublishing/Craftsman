@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>반복문</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문</title>
 </head>
+
 <body>
-    <h1>반복문</h1>
-    <h2>for 반복문</h2>
-    <script>
-    for(var i=0; i<= 10; i+=2){
-        document.write(i+'<br>');
+  <h1>반복문</h1>
+  <h2>for 반복문</h2>
+  <script>
+    for (var i = 0; i <= 10; i += 2) {
+      document.write(i + '<br>');
     }
-    </script>
-    <h2>while 반복문</h2>
-    <script>
-    let x=0;
-    while(x<= 10){
-        document.write(x+'<br>');
-        x+=2;
+  </script>
+  <h2>while 반복문</h2>
+  <script>
+    let x = 0;
+    while (x <= 10) {
+      document.write(x + '<br>');
+      x += 2;
     }
-    </script>  
-<h2>forEach 반복문</h2>
-    <script>
-    let arr= ['a', 'b', 'c', 'd', 'e'];
-    arr.forEach(function(item, index, all) {
-        document.write(item+'는 전체 배열 '+all+'에서 '+index+'번째 값입니다'+'<br>');
+  </script>
+  <h2>forEach 반복문</h2>
+  <script>
+    let arr = ['a', 'b', 'c', 'd', 'e'];
+    arr.forEach(function (item, index, all) {
+      document.write(item + '는 전체 배열 ' + all + '에서 ' + index + '번째 값입니다' + '<br>');
     });
-    </script>      
+  </script>
 </body>
+
 </html>
