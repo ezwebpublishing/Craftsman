@@ -1,17 +1,19 @@
-nav{
-    background: #ebebeb;
-    line-height: 40px;
+nav {
+  background: #ebebeb;
+  line-height: 40px;
 }
-nav ul{
-    margin:0;
-    padding: 0;
-    list-style:none;
-    display: flex;
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
-nav ul li a{
-    padding: 0 15px;
-    line-height: 20px;    
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #2c2c2c;
+
+nav ul li a {
+  padding: 0 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2c2c2c;
 }
