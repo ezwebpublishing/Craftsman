@@ -1,9 +1,9 @@
 let mainMenu = $('.main_menu > li');
 
 mainMenu.mouseover(function () {
-    $(this).find('ul').stop().slideDown();
+  $(this).find('ul').stop().slideDown();
 }).mouseout(function () {
-    $(this).find('ul').stop().slideUp();
+  $(this).find('ul').stop().slideUp();
 });
 
 //슬라이드
@@ -13,15 +13,15 @@ let slideCount = slide.length;
 let currentIdx = 0;
 
 function autoSlide() {
-    setInterval(function () {
-        //3초마다 반복수행할 구문 시작
-        nextIdx = (currentIdx + 1) % slideCount;
-        slideContainer.animate({
-            left: -100 * nextIdx + '%'
-        });
-        currentIdx = nextIdx;
+  setInterval(function () {
+    //3초마다 반복수행할 구문 시작
+    nextIdx = (currentIdx + 1) % slideCount;
+    slideContainer.animate({
+      left: -100 * nextIdx + '%'
+    });
+    currentIdx = nextIdx;
 
-    }, 3000)
+  }, 3000)
 }
 autoSlide();
 
@@ -31,10 +31,10 @@ let popup = $('#popup');
 let popupCloseBtn = popup.find('.close');
 
 popupLink.click(function (e) {
-    e.preventDefault();
-    popup.addClass('active');
+  e.preventDefault();
+  popup.addClass('active');
 });
 
 popupCloseBtn.click(function () {
-    popup.removeClass('active');
+  popup.removeClass('active');
 });
