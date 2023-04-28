@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>이벤트 문법 축약</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이벤트 문법 축약</title>
 </head>
+
 <body>
-    <h1>이벤트 문법 축약</h1>
-    <h2>Main title</h2>
+  <h1>이벤트 문법 축약</h1>
+  <h2>Main title</h2>
 
-    <script src="./js/jquery-3.6.1.min.js"></script>
-    <script>
+  <script src="./js/jquery-3.6.1.min.js"></script>
+  <script>
     let mainTT = $('h2');
-  
-    mainTT.mouseover(function(){
-        mainTT.css({color:'blue'});
+
+    mainTT.mouseover(function () {
+      mainTT.css({
+        color: 'blue'
+      });
     });
-    mainTT.mouseout(function(){
-        mainTT.css({color:'black'});
+    mainTT.mouseout(function () {
+      mainTT.css({
+        color: 'black'
+      });
     });
-     
+
     /* 도서를 참조하여 완성해보세요 */
-
-
-    </script>
+  </script>
 </body>
+
 </html>
