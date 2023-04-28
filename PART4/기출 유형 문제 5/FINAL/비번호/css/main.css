@@ -1,13 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: "맑은 고딕";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    /* 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  /* 
       main color #1243A6
       sub color #4384D9
       text color #333
@@ -15,334 +15,334 @@
 }
 
 img {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .cf:after {
-    content: '';
-    display: block;
-    clear: both;
+  content: '';
+  display: block;
+  clear: both;
 }
 
 /* wireframe */
 .wrapper {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 header {
-    height: 100px;
+  height: 100px;
 
 }
 
 .slides {
-    height: 300px;
-    background: #bbb;
+  height: 300px;
+  background: #bbb;
 }
 
 main {
-    height: 200px;
-    padding: 10px 0;
+  height: 200px;
+  padding: 10px 0;
 }
 
 footer {
-    height: 100px;
-    background: #ddd;
+  height: 100px;
+  background: #ddd;
 }
 
 /* header */
 header .logo {
-    width: 200px;
-    float: left;
-    padding-top: 30px;
+  width: 200px;
+  float: left;
+  padding-top: 30px;
 }
 
 /* Navigation */
 header nav {
-    float: right;
-    width: 720px;
-    margin-top: 30px;
-    margin-right: 10px;
-    position: relative;
-    z-index: 1;
+  float: right;
+  width: 720px;
+  margin-top: 30px;
+  margin-right: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 nav>ul>li {
-    line-height: 40px;
-    float: left;
-    width: 180px;
-    text-align: center;
-    position: relative;
+  line-height: 40px;
+  float: left;
+  width: 180px;
+  text-align: center;
+  position: relative;
 }
 
 nav>ul>li a {
-    color: #fff;
-    display: block;
-    background: #333;
+  color: #fff;
+  display: block;
+  background: #333;
 }
 
 .sub_menu {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
 }
 
 .sub_menu li a {
-    background: #fff;
-    display: block;
-    color: #333;
+  background: #fff;
+  display: block;
+  color: #333;
 }
 
 .main_menu>li>a:hover {
-    background: #1243A6;
-    color: #fff;
+  background: #1243A6;
+  color: #fff;
 }
 
 .sub_menu a:hover {
-    background: #4384D9;
-    color: #fff;
+  background: #4384D9;
+  color: #fff;
 }
 
 /* Slides */
 .slides {
-    overflow: hidden;
-    height: 300px;
+  overflow: hidden;
+  height: 300px;
 }
 
 .slides>ul {
-    height: 900px;
+  height: 900px;
 }
 
 .slide {
-    width: 1200px;
-    height: 300px;
-    position: relative;
+  width: 1200px;
+  height: 300px;
+  position: relative;
 }
 
 .slide h2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, .8);
-    padding: 10px 25px;
-    color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, .8);
+  padding: 10px 25px;
+  color: #fff;
 }
 
 /* Main Contents */
 main>div {
-    width: 400px;
-    float: left;
-    height: 100%;
+  width: 400px;
+  float: left;
+  height: 100%;
 }
 
 main .notice_gallery {
-    /* background: #777; */
+  /* background: #777; */
 }
 
 main .banner {
-    /* background: #666; */
+  /* background: #666; */
 }
 
 main .quick_links {
-    /* background: #555; */
+  /* background: #555; */
 }
 
 /* TAB */
 .tabmenu {
-    position: relative;
-    z-index: 1;
-    top: 1px;
+  position: relative;
+  z-index: 1;
+  top: 1px;
 }
 
 .tabmenu li {
-    float: left;
+  float: left;
 }
 
 .tabmenu li a {
-    display: block;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    background: #ccc;
+  display: block;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
 }
 
 .tabmenu li.active a {
-    background: #fff;
+  background: #fff;
 }
 
 .tabcontent {
-    padding: 10px;
-    border: 1px solid #ccc;
-    position: relative;
-    height: 150px;
-    box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  height: 150px;
+  box-sizing: border-box;
 }
 
 .tabcontent>div {
-    position: absolute;
-    left: 0;
-    right: 0;
-    display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: none;
 }
 
 .tabcontent>div.active {
-    display: block;
+  display: block;
 }
 
 #notice {
-    padding: 0 10px;
+  padding: 0 10px;
 }
 
 #notice li {
-    line-height: 30px;
+  line-height: 30px;
 }
 
 #notice li span {
-    float: right;
+  float: right;
 }
 
 #notice li:nth-child(even) {
-    background: #ccc;
+  background: #ccc;
 }
 
 #notice li a:hover {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #gallery {
-    padding: 20px 0;
-    text-align: center;
+  padding: 20px 0;
+  text-align: center;
 }
 
 #gallery ul {
-    display: inline-block;
+  display: inline-block;
 }
 
 #gallery ul li {
-    float: left;
-    width: 110px;
-    margin-right: 10px;
+  float: left;
+  width: 110px;
+  margin-right: 10px;
 }
 
 #gallery ul li:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 #gallery ul li img {
-    width: 100%;
+  width: 100%;
 }
 
 /* Banner */
 .banner,
 .quick_links {
-    position: relative;
-    padding: 0 10px;
-    overflow: hidden;
+  position: relative;
+  padding: 0 10px;
+  overflow: hidden;
 }
 
 .quick_links {
-    padding: 0;
+  padding: 0;
 }
 
 .banner h2,
 .quick_links h2 {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.6);
-    color: #fff;
-    padding: 10px 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px 20px;
 }
 
 .banner img,
 .quick_links img {
-    width: 100%;
+  width: 100%;
 }
 
 .banner a:hover,
 .quick_links a:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 /* Footer */
 footer {
-    background: #ebebeb;
+  background: #ebebeb;
 }
 
 footer div {
-    float: left;
-    height: 100%;
+  float: left;
+  height: 100%;
 }
 
 footer .logo {
-    width: 200px;
-    padding: 30px 0 0 20px;
+  width: 200px;
+  padding: 30px 0 0 20px;
 }
 
 footer .menu_copy {
-    width: 1000px;
+  width: 1000px;
 }
 
 footer .menu {
-    line-height: 50px;
+  line-height: 50px;
 }
 
 footer .copyright {
-    text-align: center;
-    line-height: 50px;
+  text-align: center;
+  line-height: 50px;
 }
 
 footer .menu {
-    text-align: center;
+  text-align: center;
 }
 
 footer .menu li {
-    display: inline-block;
-    margin: 0 10px;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 footer .menu li a:hover {
-    font-weight: bold;
-    text-decoration: underline;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /* popup */
 #popup {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;    
-    z-index: 10;
-    background: rgba(0,0,0,0.5);
-    display: none; 
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
 }
 
 #popup .popup_content {
-    width: 400px;
-    padding: 20px 20px 100px;
-    background: #fff;
-    border-radius: 5px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
 
 #popup .popup_content .close {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    background: #333;
-    color: #fff;
-    cursor: pointer;
-    padding: 5px 8px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 8px;
 }
 
 #popup.active {
-    display: block;
+  display: block;
 }
