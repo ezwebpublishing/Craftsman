@@ -1,90 +1,111 @@
 @charset "utf-8";
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: "맑은 고딕";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
 }
 
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
-.hidden{
-    display: none;
+
+.hidden {
+  display: none;
 }
 
 /* Layout */
-body{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
+
 main {
-    display: flex;    
+  display: flex;
 }
-main > * {
-    border:1px solid #ccc;
+
+main>* {
+  border: 1px solid #ccc;
 }
-aside{
-    width: 200px;
+
+aside {
+  width: 200px;
 }
-main .center{
-    width: 400px;
+
+main .center {
+  width: 400px;
 }
-main .slide_wrapper{
-    flex:1;
+
+main .slide_wrapper {
+  flex: 1;
 }
 
 /* Aside */
 
-aside > *{
-    border:1px solid #ccc;
+aside>* {
+  border: 1px solid #ccc;
 }
-aside header{
-    height: 100px;
+
+aside header {
+  height: 100px;
 }
-aside nav{
-    height: 400px;
+
+aside nav {
+  height: 400px;
 }
-.spot-menu{
-    height: 50px;
+
+.spot-menu {
+  height: 50px;
 }
+
 /* Slides */
-.slide_wrapper{}
+.slide_wrapper {}
 
 /* Center */
-.center > *{
-    border:1px solid #ccc; 
+.center>* {
+  border: 1px solid #ccc;
 }
+
 .shortcut {
-    height: 150px; /* 임시 */
+  height: 150px;
+  /* 임시 */
 }
+
 /* News Gallery */
-#notice{
-    height: 250px; /* 임시 */
+#notice {
+  height: 250px;
+  /* 임시 */
 }
-#gallery{
-    height: 250px; /* 임시 */
+
+#gallery {
+  height: 250px;
+  /* 임시 */
 }
 
 /* Footer */
-footer{
-    display: flex;
-    height: 100px;
+footer {
+  display: flex;
+  height: 100px;
 }
-.footer-logo{
-    width: 200px;
+
+.footer-logo {
+  width: 200px;
 }
-footer > *{
-    border:1px solid #ccc;
+
+footer>* {
+  border: 1px solid #ccc;
 }
-.copyright{
-    flex:1;
+
+.copyright {
+  flex: 1;
 }
-.sns{
-    width: 230px;
+
+.sns {
+  width: 230px;
 }

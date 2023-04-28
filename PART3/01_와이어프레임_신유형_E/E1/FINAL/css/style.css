@@ -1,93 +1,116 @@
 @charset "utf-8";
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: "맑은 고딕";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
 }
 
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
-.hidden{
-    display: none;
+
+.hidden {
+  display: none;
 }
 
 /* Layout */
-body{
-    height: 100vh;
+body {
+  height: 100vh;
 }
+
 main {
-    display: flex;
-    height:calc(100vh - 120px);
+  display: flex;
+  height: calc(100vh - 120px);
 }
-main > * {
-    border:1px solid #ccc;
+
+main>* {
+  border: 1px solid #ccc;
 }
-aside{
-    width: 200px;
+
+aside {
+  width: 200px;
 }
-main .center{
-    width: 400px;
+
+main .center {
+  width: 400px;
 }
-main .slide_wrapper{
-    flex:1;
+
+main .slide_wrapper {
+  flex: 1;
 }
 
 /* Aside */
 
-aside > *{
-    border:1px solid #ccc;
+aside>* {
+  border: 1px solid #ccc;
 }
-aside header{
-    height: 100px;
+
+aside header {
+  height: 100px;
 }
-aside nav{
-    height: 400px;
+
+aside nav {
+  height: 400px;
 }
-.spot-menu{
-    height: 50px;
+
+.spot-menu {
+  height: 50px;
 }
+
 /* Slides */
-.slide_wrapper{}
+.slide_wrapper {}
 
 /* Center */
-.center > *{
-    border:1px solid #ccc; 
+.center>* {
+  border: 1px solid #ccc;
 }
+
 .shortcut {
-    height: 150px; /* 임시 */
+  height: 150px;
+  /* 임시 */
 }
+
 /* News Gallery */
-#notice{
-    height: 250px; /* 임시 */
+#notice {
+  height: 250px;
+  /* 임시 */
 }
-#gallery{
-    height: 250px; /* 임시 */
+
+#gallery {
+  height: 250px;
+  /* 임시 */
 }
-.slide-banner{
-    height: 150px; /* 임시 */
+
+.slide-banner {
+  height: 150px;
+  /* 임시 */
 }
 
 /* Footer */
-footer{
-    display: flex;
-    height: 120px;
+footer {
+  display: flex;
+  height: 120px;
 }
-.footer-logo{
-    width: 200px;
+
+.footer-logo {
+  width: 200px;
 }
-footer > *{
-    border:1px solid #ccc;
+
+footer>* {
+  border: 1px solid #ccc;
 }
-.footer-contents{
-    flex:1;
+
+.footer-contents {
+  flex: 1;
 }
-.footer-contents > *{
-    border:1px solid #ccc;
-    height: 60px;
+
+.footer-contents>* {
+  border: 1px solid #ccc;
+  height: 60px;
 }
