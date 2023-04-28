@@ -1,88 +1,103 @@
 @charset "utf-8";
+
 * {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: "맑은 고딕";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
 }
 
-a{
-    color: inherit;
+a {
+  color: inherit;
 }
-.hidden{
-    display: none;
+
+.hidden {
+  display: none;
 }
 
 /* Layout */
-main{
-    display: flex;   
-}
-main > *{
-    border:1px solid #ccc;
+main {
+  display: flex;
 }
 
-aside{
-    width: 200px;
+main>* {
+  border: 1px solid #ccc;
 }
-.main-content{
-    flex: 1;
+
+aside {
+  width: 200px;
+}
+
+.main-content {
+  flex: 1;
 }
 
 /* Aside */
-aside > *{
-    border:1px solid #ccc;
+aside>* {
+  border: 1px solid #ccc;
 }
-aside header{
-    height: 100px;
+
+aside header {
+  height: 100px;
 }
-aside nav{
-    height: 400px;
+
+aside nav {
+  height: 400px;
 }
 
 /* Slides */
-.slide_wrapper{
-    height: 400px;
+.slide_wrapper {
+  height: 400px;
 }
-.slide-image{
-    border:1px solid #ccc;
-    height: 400px;
+
+.slide-image {
+  border: 1px solid #ccc;
+  height: 400px;
 }
-.slide-banner{
-    height: 150px;
-    border:1px solid #ccc;
+
+.slide-banner {
+  height: 150px;
+  border: 1px solid #ccc;
 }
+
 /* News Gallery */
-.news-gallery{
-    display: flex;
+.news-gallery {
+  display: flex;
 }
-.news-gallery > *{
-    border:1px solid #ccc;
-    height: 250px;
-    flex:1;
+
+.news-gallery>* {
+  border: 1px solid #ccc;
+  height: 250px;
+  flex: 1;
 }
 
 /* Footer */
-footer{
-    display: flex;    
+footer {
+  display: flex;
 }
-footer > *{
-    border:1px solid #ccc;  
-    height: 120px;
+
+footer>* {
+  border: 1px solid #ccc;
+  height: 120px;
 }
-.footer-logo{
-    width: 200px;
+
+.footer-logo {
+  width: 200px;
 }
-.footer-contents{
-    flex:1;
+
+.footer-contents {
+  flex: 1;
 }
-.family-site{
-    width: 230px;
+
+.family-site {
+  width: 230px;
 }
-.footer-contents > *{
-    height: 60px;
-    border:1px solid #ccc;  
+
+.footer-contents>* {
+  height: 60px;
+  border: 1px solid #ccc;
 }
