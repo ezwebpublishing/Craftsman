@@ -64,7 +64,9 @@ aside nav {
 }
 
 /* Slides */
-.slide_wrapper {}
+.slide-wrapper {
+	flex:1;
+}
 
 /* Center */
 .center>* {
