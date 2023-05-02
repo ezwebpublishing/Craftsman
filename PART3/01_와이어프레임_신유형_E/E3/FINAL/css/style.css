@@ -18,13 +18,12 @@ a{
 }
 
 /* Layout */
-body{
-    display: flex;
-    flex-direction: column;
+body{   
     height: 100vh;
 }
 main {
-    display: flex;    
+    display: flex;
+    height:calc(100% - 100px);    
 }
 main > * {
     border:1px solid #ccc;
