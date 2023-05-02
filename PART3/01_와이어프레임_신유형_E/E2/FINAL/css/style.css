@@ -18,13 +18,12 @@ a{
 }
 
 /* Layout */
-.container{
-    display: flex;
-    flex-direction: column;
+body{
     height: 100vh;
 }
 main {
     display: flex;
+	height:calc(100% - 100px);
 }
 main > * {
     border:1px solid #ccc;
@@ -60,9 +59,7 @@ aside nav{
 .center > *{
     border:1px solid #ccc; 
 }
-.shortcut {
-    height: 150px; /* 임시 */
-}
+
 /* News Gallery */
 #notice{
     height: 250px; /* 임시 */
