@@ -42,7 +42,7 @@ main .center {
   width: 400px;
 }
 
-main .slide_wrapper {
+main .slide-wrapper {
   flex: 1;
 }
 
