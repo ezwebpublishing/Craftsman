@@ -24,21 +24,16 @@ body {
 .hidden {
   display: none;
 }
-
 /* LAYOUT */
-
-main {
+main{
   display: flex;
 }
-
-aside {
+aside{
   width: 200px;
 }
-
-.main-content {
-  flex: 1;
+.main-content{
+  flex:1;
 }
-
 /* ASIDE */
 aside header {
   height: 100px;
@@ -174,12 +169,11 @@ aside nav li:hover>a {
 #notice ul li a:hover {
   font-weight: bold;
 }
-
 #gallery ul {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  padding: 15px 20px;
+  padding: 20px;
 }
 
 #gallery ul li {
@@ -198,34 +192,27 @@ aside nav li:hover>a {
 /* Footer */
 footer {
   display: flex;
-
 }
-
 footer>* {
   display: flex;
   height: 100px;
   align-items: center;
   justify-content: center;
 }
-
 .footer-logo {
   width: 200px;
 }
-
 .copyright {
   flex: 1;
 }
-
 .family-site {
   width: 230px;
 }
-
 .family-site select {
   border: 1px solid #ccc;
   padding: 5px;
   border-radius: 3px;
 }
-
 /* popup */
 #popup {
   position: fixed;
@@ -237,7 +224,6 @@ footer>* {
   z-index: 10;
   background: rgba(0, 0, 0, .5);
 }
-
 #popup .popup-content {
   width: 400px;
   padding: 20px 20px 100px;
@@ -249,7 +235,6 @@ footer>* {
   transform: translate(-50%, -50%);
   box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
-
 #popup .popup-content .close {
   position: absolute;
   right: 10px;
@@ -259,7 +244,6 @@ footer>* {
   cursor: pointer;
   padding: 5px 8px;
 }
-
 #popup.active {
   display: block;
 }
