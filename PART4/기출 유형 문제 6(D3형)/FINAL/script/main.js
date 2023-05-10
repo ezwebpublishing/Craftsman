@@ -1,13 +1,14 @@
-let mainMenu = $('.main_menu>li');
-let submenu = $('.sub_menu');
+let mainMenu = $('.main-menu>li');
+let submenu = $('.sub-menu');
+
 mainMenu.mouseover(function () {
-    submenu.stop().fadeIn();
+  submenu.stop().fadeIn();
 }).mouseout(function () {
-    submenu.stop().fadeOut();
+  submenu.stop().fadeOut();
 });
 
 //슬라이드
-let slideContainer = $('.slide_wrapper');
+let slideContainer = $('.slide-wrapper');
 let slide = slideContainer.find('.slide');
 let slideCount = slide.length;
 let currentIdx = 0;
@@ -16,10 +17,10 @@ slide.eq(currentIdx).fadeIn();
 setInterval(showNextSlide, 3000);
 
 function showNextSlide() {
-    let nextIdx = (currentIdx + 1) % slideCount;
-    slide.eq(currentIdx).fadeOut();
-    slide.eq(nextIdx).fadeIn();
-    currentIdx = nextIdx;
+  let nextIdx = (currentIdx + 1) % slideCount;
+  slide.eq(currentIdx).fadeOut();
+  slide.eq(nextIdx).fadeIn();
+  currentIdx = nextIdx;
 }
 
 //탭
@@ -27,23 +28,24 @@ let tabMenu = $('.tabmenu li');
 let tabContent = $('.tabcontent > div');
 
 tabMenu.click(function (e) {
-    e.preventDefault();
-    tabMenu.removeClass('active');
-    $(this).addClass('active');
-    let target = $(this).find('a').attr('href');
-    tabContent.removeClass('active');
-    $(target).addClass('active');
+  e.preventDefault();
+  tabMenu.removeClass('active');
+  $(this).addClass('active');
+  let target = $(this).find('a').attr('href');
+  tabContent.removeClass('active');
+  $(target).addClass('active');
 });
+
 //팝업
 let popupLink = $('#notice li:first');
 let popup = $('#popup');
 let popupCloseBtn = popup.find('.close');
 
 popupLink.click(function (e) {
-    e.preventDefault();
-    popup.addClass('active');
+  e.preventDefault();
+  popup.addClass('active');
 });
 
 popupCloseBtn.click(function () {
-    popup.removeClass('active');
+  popup.removeClass('active');
 });

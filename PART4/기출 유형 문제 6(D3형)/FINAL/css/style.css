@@ -14,23 +14,16 @@
 a {
   color: inherit;
 }
-
-
 /* Layout */
-
 main {
   display: flex;
 }
-
 aside {
   width: 200px;
 }
-
 .content {
-  /* width: calc(100% - 200px); */
   flex: 1;
 }
-
 /* ASIDE */
 
 aside nav {
@@ -38,37 +31,34 @@ aside nav {
   margin: 0 10px 20px;
   border: 1px solid #ccc;
 }
-
 aside nav li {
   line-height: 40px;
   height: 40px;
 }
-
 aside nav a {
   display: block;
   padding: 0 5px;
   color: #333;
   transition: 0.3s;
 }
-
 aside nav li:hover>a {
   background: #666;
   color: #fff;
 }
 
-.main_menu>li {
+.main-menu>li {
   position: relative;
 }
 
-.main_menu>li>a {
+.main-menu>li>a {
   border-bottom: 1px solid #ccc;
 }
 
-.main_menu>li:last-child a {
+.main-menu>li:last-child a {
   border-bottom: none;
 }
 
-.sub_menu {
+.sub-menu {
   background: rgba(0, 0, 0, .7);
   display: none;
   position: absolute;
@@ -78,11 +68,11 @@ aside nav li:hover>a {
   z-index: 100;
 }
 
-.sub_menu li {
+.sub-menu li {
   display: inline-block;
 }
 
-.sub_menu li a {
+.sub-menu li a {
   color: #ccc;
 }
 
@@ -105,10 +95,9 @@ aside .spot-menu li a:hover {
 }
 
 /* SLIDE */
-.slide_wrapper {
+.slide-wrapper {
   height: 400px;
   position: relative;
-  overflow: hidden;
 }
 
 .slide>a>img {
@@ -277,7 +266,6 @@ footer {
 .footer-menu ul li a:hover {
   text-decoration: underline;
 }
-
 /* popup */
 #popup {
   position: fixed;
@@ -289,7 +277,7 @@ footer {
   z-index: 10;
 }
 
-#popup .popup_content {
+#popup .popup-content {
   width: 400px;
   padding: 20px 20px 100px;
   background: #fff;
@@ -301,7 +289,7 @@ footer {
   box-shadow: 0 0 3px rgba(0, 0, 0, .5);
 }
 
-#popup .popup_content .close {
+#popup .popup-content .close {
   position: absolute;
   right: 10px;
   bottom: 10px;
