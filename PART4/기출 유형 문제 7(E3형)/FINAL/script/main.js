@@ -5,6 +5,7 @@ mainMenu.mouseover(function () {
     $(this).find('ul').stop().slideUp();
 });
 
+
 //슬라이드
 let slideContainer = $('.slide-wrapper .container');
 let slide = slideContainer.find('.slide');
@@ -23,18 +24,6 @@ function autoSlide() {
 }
 autoSlide();
 
-//탭
-let tabMenu = $('.tabmenu li');
-let tabContent = $('.tabcontent > div');
-
-tabMenu.click(function (e) {
-    e.preventDefault();
-    tabMenu.removeClass('active');
-    $(this).addClass('active');
-    let target = $(this).find('a').attr('href');
-    tabContent.removeClass('active');
-    $(target).addClass('active');
-});
 //팝업
 let popupLink = $('#notice li:first');
 let popup = $('#popup');
