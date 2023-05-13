@@ -21,6 +21,7 @@ a {
 
 /* Layout */
 body {
+  width: 100%;
   height: 100vh;
 }
 
@@ -28,6 +29,7 @@ main {
   display: flex;
   height: calc(100% - 120px);
 }
+
 
 aside {
   width: 200px;
@@ -37,136 +39,111 @@ main .center {
   width: 400px;
 }
 
-main .slides {
+main .slide-wrapper {
   flex: 1;
 }
 
-/* Aside */
-
 /* ASIDE */
-aside header {
-  height: 100px;
+aside header{
+  height: 100px;    
 }
-
-aside nav {
-  background: #fff;
-  margin: 20px 10px 20px;
-  border: 1px solid #ccc;
+aside nav{
+  background: #fff;    
+  margin:20px 10px 20px;
+  border:1px solid #ccc;
 }
-
-.sub_menu {
+.sub-menu {
   background: #ccc;
   display: none;
 }
-
-aside nav li {
+aside nav li{
   line-height: 40px;
 }
-
-aside nav>ul>li+li {
-  border-top: 1px solid #ccc;
+aside nav > ul > li + li{
+  border-top:1px solid #ccc;
 }
-
-aside nav a {
+aside nav a{
   display: block;
   padding: 0 5px;
   color: #333;
-  transition: 0.3s;
+  transition:0.3s;
 }
-
-aside nav li:hover>a {
+aside nav li:hover > a{
   background: #666;
   color: #fff;
 }
 
-aside .spot-menu {
-  display: flex;
-  justify-content: center;
+aside .spot-menu{
+  display: flex; 
+  justify-content: center;   
 }
-
-aside .spot-menu li {
+aside .spot-menu li{
   padding: 0 10px;
 }
-
-aside .spot-menu li:first-child {
-  border-right: 1px solid #ccc;
+aside .spot-menu li:first-child{
+  border-right:1px solid #ccc;
 }
-
-aside .spot-menu li a:hover {
+aside .spot-menu li a:hover{
   text-decoration: underline;
 }
-
 /* SLIDES */
-.slide_wrapper {
+.slide-wrapper{
   display: flex;
   flex: 1;
 }
-
-.slide_wrapper>* {
+.slide-wrapper > *{
   height: 400px;
 }
-
-.slide-image {
+.slide-image{
   height: 100%;
   overflow: hidden;
 }
-
-.slide-image .container {
+.slide-image .container{
   height: 100%;
-  width: 300%;
+  width:300%;
   display: flex;
   position: relative;
 }
-
-.slide-image .container .slide {
-  width: calc(100%/3);
+.slide-image .container .slide{
+  width:calc(100%/3);
   height: 100%;
 }
-
-.slide-image img {
+.slide-image img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 /* Center */
-.center {
+.center{
   padding: 10px;
 }
-
-.center>* {
-  margin: 20px 0;
+.center > * {
+  margin:20px 0;
 }
-
 .shortcut {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap:10px;   
 }
-
-.shortcut>img {
+.shortcut > img{
   width: 100px;
 }
-
 /* News Gallery */
-.news-gallery h2 {
-  border-radius: 5px 5px 0 0;
+.news-gallery h2{   
+  border-radius:5px 5px 0 0;
   display: inline-block;
   padding: 5px 10px;
   background: #666;
   color: #fff;
-  margin-bottom: -1px;
+  margin-bottom:-1px;
 }
-
-.news-gallery ul {
-  border: 1px solid #666;
+.news-gallery ul{
+  border:1px solid #666;    
 }
-
 #notice {
   margin-bottom: 20px;
 }
-
-#notice ul li {
+#notice ul li{
   line-height: 30px;
   display: flex;
   justify-content: space-between;
@@ -174,12 +151,10 @@ aside .spot-menu li a:hover {
   border-bottom: 1px dashed #ebebeb;
   padding: 0 5px;
 }
-
-#notice ul li:last-child {
-  border-bottom: none;
+#notice ul li:last-child{
+  border-bottom:none;
 }
-
-#notice ul li:hover {
+#notice ul li:hover{
   background: #ebebeb;
 }
 
@@ -187,18 +162,17 @@ aside .spot-menu li a:hover {
   font-weight: bold;
 }
 
-#gallery ul {
+#gallery ul{
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap:10px;
   padding: 15px 20px;
 }
 
-#gallery ul li {
-  transition: 0.3s;
+#gallery ul li{
+  transition:0.3s;
   text-align: center;
 }
-
 #gallery ul li img {
   width: 100%;
 }
@@ -206,57 +180,46 @@ aside .spot-menu li a:hover {
 #gallery ul li:hover {
   opacity: 0.5;
 }
-
-.banner ul {
+.banner ul{
   display: flex;
   justify-content: space-between;
 }
-
-.banner ul li {
+.banner ul li{
   text-align: center;
 }
-
-.banner ul img {
+.banner ul img{
   height: 50px;
 }
 
 /* Footer */
-footer {
+footer{
   display: flex;
   height: 120px;
 }
-
-.footer-logo {
+.footer-logo{
   width: 200px;
 }
-
-.footer-contents {
+.footer-contents{
   padding-top: 30px;
-  flex: 1;
+  flex:1;
   text-align: left;
 }
-
-.footer-menu ul {
+.footer-menu ul{
   display: flex;
   margin-bottom: 20px;
 }
-
 .footer-menu ul li {
   padding: 0 15px;
 }
-
-.footer-menu ul li+li {
-  border-left: 1px solid #ccc;
+.footer-menu ul li + li{
+  border-left:1px solid #ccc;
 }
-
-.footer-menu ul li a:hover {
+.footer-menu ul li a:hover{
   text-decoration: underline;
 }
-
-.copyright {
+.copyright{
   padding: 0 15px;
 }
-
 /* popup */
 #popup {
   position: fixed;
@@ -265,7 +228,7 @@ footer {
   top: 0;
   bottom: 0;
   display: none;
-  z-index: 10;
+  z-index:10;
   background: rgba(0, 0, 0, .5);
 }
 
@@ -275,10 +238,10 @@ footer {
   background: #fff;
   border-radius: 5px;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  box-shadow: 0 0 3px rgba(0, 0, 0, .5);    
 }
 
 #popup .popup_content .close {
