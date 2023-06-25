@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS 우선순위</title>
+  <style>
+    /*  도서를 참조하여 완성해보세요 */
+    section p{color: red; text-decoration: line-through;} 
+    section p{color: blue; text-decoration: overline;} 
+    section p{color: green; text-decoration: underline;}
+  </style>
+</head>
+
+<body>
+  <h1>우선순위</h1>
+  <section>
+    <h2>section title</h2>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+  </section>
+  <article>
+    <p class="review" id="best">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+    <p class="review">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+    <p class="review">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+    </p>
+  </article>
+</body>
+
+</html>
