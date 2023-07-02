@@ -71,11 +71,17 @@ main .quick_links{
 	background: #555;
 }
 /* TAB */
-.notice{
+/* TAB */
+.notice {
 	position: relative;
 }
-.tabmenu > li{
-	float:left;
+.tabmenu>li {
+	float: left;		
+}
+.tabmenu>li>a{
+	position: relative;
+	z-index: 1;
+	top: 1px;
 }
 .tabmenu > li > ul{
 	position:absolute;
