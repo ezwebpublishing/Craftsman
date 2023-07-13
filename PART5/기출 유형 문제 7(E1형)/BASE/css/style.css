@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Layout */
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  height: calc(100% - 120px);
+}
+
+main>* {
+  border: 1px solid #ccc;
+}
+
+aside {
+  width: 200px;
+}
+
+main .center {
+  width: 400px;
+}
+
+main .slide-wrapper {
+  flex: 1;
+}
+
+/* Aside */
+aside>* {
+  border: 1px solid #ccc;
+}
+
+aside header {
+  height: 100px;
+}
+
+aside nav {
+  height: 400px;
+}
+
+.spot-menu {
+  height: 50px;
+}
+
+/* Slides */
+.slide-wrapper {
+  flex: 1;
+}
+
+/* Center */
+.center>* {
+  border: 1px solid #ccc;
+}
+
+.shortcut {
+  height: 150px;
+  /* 임시 */
+}
+
+/* News Gallery */
+#notice {
+  height: 250px;
+  /* 임시 */
+}
+
+#gallery {
+  height: 250px;
+  /* 임시 */
+}
+
+.slide-banner {
+  height: 150px;
+  /* 임시 */
+}
+
+/* Footer */
+footer{
+  display: flex;
+  height: 120px;
+}
+.footer-logo{
+  width: 200px;
+}
+footer > *{
+  border:1px solid #ccc;
+}
+.footer-contents{
+  flex:1;
+}
+.footer-contents > *{
+  border:1px solid #ccc;
+  height: 60px;
+}
