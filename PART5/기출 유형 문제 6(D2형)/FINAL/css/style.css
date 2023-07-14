@@ -111,7 +111,7 @@ aside nav li:hover > a{
 .news_gallery{
     display: flex;
     padding: 10px;
-    gap:30px
+    gap:30px;
 }
 .news_gallery > * {
     height: 250px;
