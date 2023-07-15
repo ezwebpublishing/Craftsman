@@ -138,7 +138,7 @@ aside .spot-menu li a:hover{
 .news-gallery{
     display: flex;
     padding: 0 10px;
-    gap:30px
+    gap:30px;
 }
 .news-gallery > * {
     height: 250px;
