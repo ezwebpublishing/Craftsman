@@ -187,7 +187,7 @@ aside .spot-menu li a:hover{
     display: flex;
     justify-content: space-between;
     transition:0.3s;
-    border-bottom:1px dashed #ebebeb
+    border-bottom:1px dashed #ebebeb;
 }
 #notice li:last-child{
     border-bottom:none;
