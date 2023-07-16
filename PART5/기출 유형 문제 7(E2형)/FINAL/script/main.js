@@ -1,4 +1,4 @@
-let mainMenu = $('.main_menu>li');
+let mainMenu = $('.main-menu>li');
 mainMenu.mouseover(function () {
     $(this).find('ul').stop().slideDown();
 }).mouseout(function () {
