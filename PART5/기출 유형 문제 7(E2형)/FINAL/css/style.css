@@ -46,7 +46,7 @@ aside nav{
     margin:20px 10px 20px;
     border:1px solid #ccc;
 }
-.sub_menu {
+.sub-menu {
     background: #ccc;
     display: none;
 }
