@@ -16,7 +16,7 @@ function autoSlide() {
   setInterval(function () {
     /*⑤*/
     //3초마다 반복 수행할 구문 시작
-    let nextIdx = (currentIdx) % slideCount; /*⑥*/
+    let nextIdx = (currentIdx + 1) % slideCount; /*⑥*/
     slideContainer.animate({
       left: -100 * nextIdx + '%' /*⑦*/
     });
