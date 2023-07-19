@@ -9,14 +9,15 @@
 </head>
 
 <body>
-  <h1>SetInterval</h1>
+  <h1>난수 생성하기</h1>
 
   <script>
-    let interval = setInterval(function () {
-          alert('반갑습니다.');
-     }, 4000);
-     
-    //clearInterval(interval);
+    let ranNum = Math.random() * 10;
+    let ranNum2 = Math.floor(ranNum);
+    let ranNum3 = ranNum2 % 8; //값을 8미만으로 한정
+    console.log(ranNum);
+
+    document.write(ranNum3);
   </script>
 
 </body>
