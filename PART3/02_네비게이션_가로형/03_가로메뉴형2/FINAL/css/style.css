@@ -52,7 +52,9 @@ header nav{
 	top:30px;
 	right:10px;
 	width: 720px;
-	background: #fff;		
+	background: #fff;
+	position: relative;
+	z-index: 1;	
 }
 nav > ul > li{
 	line-height: 40px;
