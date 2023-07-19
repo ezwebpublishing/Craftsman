@@ -60,9 +60,6 @@ aside nav {
   height: 400px;
 }
 
-/* Slides */
-.slide_wrapper {}
-
 /* Center */
 .center>* {
   border: 1px solid #ccc;
