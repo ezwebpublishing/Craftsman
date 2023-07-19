@@ -51,15 +51,15 @@ aside nav > ul li a{
 	color: #fff;
 }
 
-aside nav > ul ul{
+aside nav > ul ul {
 	position: absolute;
 	top: -20px;
-	height:250px;
 	left: 100%;
 	width: 100%;
+	height: 200px;
 	background: #ccc;
-	display: none;	
-} 
+	display: none;
+}
 aside ul ul a:hover{ 
 	background-color:#ebebeb;
 	color:#555;
