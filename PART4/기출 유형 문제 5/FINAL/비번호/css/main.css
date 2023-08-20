@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +9,11 @@
   font-size: 14px;
   color: #333;
   box-sizing: border-box;
-  /* 
-      main color #1243A6
-      sub color #4384D9
-      text color #333
-  */
+  /*
+main color #1243A6
+sub color #4384D9
+text color #333
+*/
 }
 
 img {
@@ -32,7 +34,6 @@ img {
 
 header {
   height: 100px;
-
 }
 
 .slides {
@@ -54,7 +55,7 @@ footer {
 header .logo {
   width: 200px;
   float: left;
-  padding-top: 30px;
+  height: 100%;
 }
 
 /* Navigation */
@@ -110,7 +111,7 @@ nav>ul>li a {
   height: 300px;
 }
 
-.slides>ul {
+slides>ul {
   height: 900px;
 }
 
@@ -135,18 +136,6 @@ main>div {
   width: 400px;
   float: left;
   height: 100%;
-}
-
-main .notice_gallery {
-  /* background: #777; */
-}
-
-main .banner {
-  /* background: #666; */
-}
-
-main .quick_links {
-  /* background: #555; */
 }
 
 /* TAB */
@@ -288,6 +277,7 @@ footer .menu_copy {
 
 footer .menu {
   line-height: 50px;
+  text-align: center;
 }
 
 footer .copyright {
@@ -295,13 +285,13 @@ footer .copyright {
   line-height: 50px;
 }
 
-footer .menu {
-  text-align: center;
-}
-
 footer .menu li {
   display: inline-block;
   margin: 0 10px;
+}
+
+footer .copyright {
+  height: 50px;
 }
 
 footer .menu li a:hover {
