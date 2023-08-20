@@ -1,7 +1,6 @@
 let mainMenu = $('nav > ul > li');
 let subMenu = mainMenu.find('ul');
 let header = $('header');
-
 mainMenu.mouseover(function () {
   header.addClass('active');
   subMenu.stop().slideDown();
@@ -18,7 +17,7 @@ let currentIdx = 0;
 
 function autoSlide() {
   setInterval(function () {
-    //3초마다 반복수행 할 구문 시작        
+    //3초마다 반복수행할 구문 시작
     nextIdx = (currentIdx + 1) % slideCount;
     slideContainer.animate({
       marginLeft: -1200 * nextIdx + 'px'
@@ -28,16 +27,13 @@ function autoSlide() {
 }
 autoSlide();
 
-//팝업
 let popupLink = $('.notice li:first');
 let popup = $('#popup');
 let popupCloseBtn = popup.find('.close');
-
 popupLink.click(function (e) {
   e.preventDefault();
   popup.addClass('active');
 });
-
 popupCloseBtn.click(function () {
   popup.removeClass('active');
 });
