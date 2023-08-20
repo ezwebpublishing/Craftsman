@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+img {
+  vertical-align: top;
+}
+
 .cf:after {
   content: '';
   display: block;
@@ -27,21 +31,20 @@
   width: 200px;
   height: 100%;
   float: left;
-  /* 배경 제거 */
+
 }
 
 .wrapper main {
   width: 800px;
   float: right;
   height: 100%;
-  /* 배경 제거 */
+
 }
 
 /* aside */
 aside .logo {
   height: 100px;
   padding-top: 30px;
-  /* 배경 제거 */
 }
 
 aside nav {
@@ -75,13 +78,15 @@ aside li {
 }
 
 .sub_menu li a:hover {
-  background-color: #ddd;
+  background-color: #FFB547;
   color: #333;
 }
 
 .sub_menu {
   display: none;
 }
+
+
 
 /* Main Contents */
 main .contents {
@@ -92,8 +97,14 @@ main .contents {
 
 main .slides {
   height: 350px;
-  /* 배경 제거 */
+
 }
+
+.contents>* {
+  float: left;
+  width: 33.3333%;
+}
+
 
 /* Slides */
 .slide_container {
@@ -108,6 +119,7 @@ main .slides {
   height: 350px;
   left: 0;
   top: 0;
+
 }
 
 .slide h2 {
@@ -120,12 +132,6 @@ main .slides {
   color: #fff;
   font-size: 20px;
 }
-
-.contents>* {
-  float: left;
-  width: 33.33333%;
-}
-
 
 /* TAB */
 .tabmenu li {
