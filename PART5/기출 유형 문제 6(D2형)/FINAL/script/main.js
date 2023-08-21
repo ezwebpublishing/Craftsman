@@ -7,20 +7,19 @@ mainMenu.mouseover(function () {
 });
 
 //슬라이드
-let slideContainer = $('.container'); /*①*/
-let slide = slideContainer.find('.slide'); /*②*/
-let slideCount = slide.length; /*③*/
-let currentIdx = 0; /*④*/
+let slideContainer = $('.container');
+let slide = slideContainer.find('.slide');
+let slideCount = slide.length;
+let currentIdx = 0;
 
 function autoSlide() {
   setInterval(function () {
-    /*⑤*/
     //3초마다 반복 수행할 구문 시작
-    let nextIdx = (currentIdx + 1) % slideCount; /*⑥*/
+    let nextIdx = (currentIdx + 1) % slideCount;
     slideContainer.animate({
-      left: -100 * nextIdx + '%' /*⑦*/
+      left: -100 * nextIdx + '%'
     });
-    currentIdx = nextIdx; /*⑧*/
+    currentIdx = nextIdx;
   }, 3000)
 }
 autoSlide();
