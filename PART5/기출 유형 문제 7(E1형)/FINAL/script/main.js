@@ -7,12 +7,9 @@ mainMenu.mouseover(function () {
 
 //슬라이드
 let slideContainer = $('.slide-wrapper .container');
-
 let slide = slideContainer.find('.slide');
 let slideCount = slide.length;
 let currentIdx = 0;
-
-console.log(slideCount);
 
 function autoSlide() {
   setInterval(function () {
@@ -26,6 +23,7 @@ function autoSlide() {
 }
 autoSlide();
 
+//팝업
 let popupLink = $('#notice li:first');
 let popup = $('#popup');
 let popupCloseBtn = popup.find('.close');
