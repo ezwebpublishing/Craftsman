@@ -54,7 +54,16 @@ footer {
 /* header */
 header .logo {
   width: 200px;
+  /* 배경 제거 */
   float: left;
+  height: 100%;
+  padding-top: 30px;
+}
+
+header nav {
+  width: 1000px;
+  /* 배경 제거 */
+  float: right;
   height: 100%;
 }
 
@@ -95,6 +104,12 @@ nav>ul>li a {
   color: #333;
 }
 
+.sub_menu li a {
+  background: #fff;
+  display: block;
+  color: #333;
+}
+
 .main_menu>li>a:hover {
   background: #1243A6;
   color: #fff;
@@ -107,6 +122,7 @@ nav>ul>li a {
 
 /* Slides */
 .slides {
+  width: 100%;
   overflow: hidden;
   height: 300px;
 }
@@ -288,10 +304,6 @@ footer .copyright {
 footer .menu li {
   display: inline-block;
   margin: 0 10px;
-}
-
-footer .copyright {
-  height: 50px;
 }
 
 footer .menu li a:hover {
