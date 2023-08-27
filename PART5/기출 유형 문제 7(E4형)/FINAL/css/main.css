@@ -1,0 +1,313 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Layout */
+body {
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 120px);
+}
+
+aside {
+    width: 200px;
+}
+
+main .center {
+    width: 400px;
+}
+
+main .slides {
+    flex: 1;
+}
+
+/* ASIDE */
+aside header {
+    height: 100px;
+}
+
+aside nav {
+    background: #fff;
+    margin: 20px 10px 20px;
+    border: 1px solid #ccc;
+}
+
+aside nav li {
+    line-height: 40px;
+}
+
+aside nav>ul>li+li {
+    border-top: 1px solid #ccc;
+}
+
+.main-menu>li {
+    position: relative;
+}
+
+.sub-menu {
+    background: #ccc;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+}
+
+aside nav a {
+    display: block;
+    padding: 0 5px;
+    color: #333;
+    transition: 0.3s;
+}
+
+aside nav li:hover>a {
+    background: #666;
+    color: #fff;
+}
+
+aside .spot-menu {
+    display: flex;
+    justify-content: center;
+}
+
+aside .spot-menu li {
+    padding: 0 10px;
+}
+
+aside .spot-menu li:first-child {
+    border-right: 1px solid #ccc;
+}
+
+aside .spot-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* SLIDES */
+.slide-wrapper {
+    display: flex;
+    flex: 1;
+}
+
+.slide-wrapper>* {
+    height: 400px;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slide-image .container {
+    height: 300%;
+    width: 100%;
+    position: relative;
+}
+
+.slide-image .container .slide {
+    height: calc(100%/3);
+    width: 100%;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Center */
+.center {
+    padding: 10px;
+}
+
+.center>* {
+    margin: 20px 0;
+}
+
+.shortcut {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.shortcut>img {
+    width: 100px;
+}
+
+/* News Gallery */
+.news-gallery h2 {
+    border-radius: 5px 5px 0 0;
+    display: inline-block;
+    padding: 5px 10px;
+    background: #666;
+    color: #fff;
+    margin-bottom: -1px;
+}
+
+.news-gallery ul {
+    border: 1px solid #666;
+}
+
+#notice {
+    margin-bottom: 20px;
+}
+
+#notice ul li {
+    line-height: 30px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.3s;
+    border-bottom: 1px dashed #ebebeb;
+    padding: 0 5px;
+}
+
+#notice ul li:last-child {
+    border-bottom: none;
+}
+
+#notice ul li:hover {
+    background: #ebebeb;
+}
+
+#notice ul li a:hover {
+    font-weight: bold;
+}
+
+#gallery ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 20px;
+}
+
+#gallery ul li {
+    transition: 0.3s;
+    text-align: center;
+}
+
+#gallery ul li img {
+    width: 100%;
+}
+
+#gallery ul li:hover {
+    opacity: 0.5;
+}
+
+.banner ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner ul li {
+    text-align: center;
+}
+
+.banner ul img {
+    height: 50px;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+    height: 120px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 200px;
+}
+
+.footer-contents {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-menu ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer-menu ul li {
+    padding: 0 15px;
+}
+
+.footer-menu ul li+li {
+    border-left: 1px solid #ccc;
+}
+
+.footer-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    flex: 1;
+}
+
+.family-site {
+    width: 230px;
+}
+
+.family-site select {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* popup */
+#popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+    background: rgba(0, 0, 0, .5);
+}
+
+#popup .popup-content {
+    width: 400px;
+    padding: 20px 20px 100px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5);
+}
+
+#popup .popup-content .close {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 8px;
+}
+
+#popup.active {
+    display: block;
+}
