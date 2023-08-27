@@ -14,7 +14,9 @@
 a {
   color: inherit;
 }
-
+img{
+	vertical-align:top; /* 이미지 밑 공백 제거*/
+}
 /* Layout */
 main {
   display: flex;
