@@ -3,7 +3,7 @@ Craftsman Web Design
 
 
 ### 도서 오류 정정합니다.
-####페이지72
+##페이지72
 h5{color: rgba(0,0,0,255,0.5);}
 -> h5{color: rgba(0,0,255,0.5);}
 
