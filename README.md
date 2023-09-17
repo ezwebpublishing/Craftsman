@@ -2,8 +2,8 @@
 
 ## PART 1 웹디자인기능사 실기 기본
 
-*CHAPTER 1 유형분석
-*CHAPTER 2 기술적 준수사항
+- CHAPTER 1 유형분석
+- CHAPTER 2 기술적 준수사항
 
 ## PART 2 기본기 다지기
 
