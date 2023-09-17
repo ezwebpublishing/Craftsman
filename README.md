@@ -42,8 +42,8 @@
 - CHAPTER 8 신유형 문제(E4형 - 실전)
 
 ## 도서 구매
-### [sdedu] (https://www.sdedu.co.kr/book/item.php?it_id=1645425753&cat_id=001009021)
-### [yes24] (https://www.yes24.com/Product/Search?query=9791138321310&domain=BOOK)
+##### [sdedu] (https://www.sdedu.co.kr/book/item.php?it_id=1645425753&cat_id=001009021)
+##### [yes24] (https://www.yes24.com/Product/Search?query=9791138321310&domain=BOOK)
 ------------
 
 ### 도서 오류 정정합니다.
