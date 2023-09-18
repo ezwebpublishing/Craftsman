@@ -66,3 +66,8 @@ h6{color: hls(240,100%,50%);} -> h6{color: hsl(240,100%,50%);}
       font-family: '돋움', dotum, helvetica, sans-serif;
     }
 ```
+#### 페이지150
+let obj = New Object(); -> let obj = new Object();
+```
+   let obj = new Object();
+```
