@@ -71,3 +71,20 @@ let obj = New Object(); -> let obj = new Object();
 ```
    let obj = new Object();
 ```
+#### 페이지194
+header logo, nav css 누락
+```
+   /* header */
+.logo{
+  width: 200px;
+  background: #999;
+  height: 100px;
+  float: left;
+}
+nav{
+  width: 1000px;
+  background: #888;
+  height: 100%;
+  float:right;
+}
+```
