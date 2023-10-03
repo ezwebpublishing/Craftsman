@@ -88,3 +88,13 @@ nav{
   float:right;
 }
 ```
+
+#### 페이지194
+클래스명 수정
+.slide-banner -> .banner
+```
+.banner{
+  height: 150px;
+  /* 임시 */
+}
+```
