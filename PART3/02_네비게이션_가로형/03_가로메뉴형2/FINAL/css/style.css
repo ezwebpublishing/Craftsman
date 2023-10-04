@@ -52,8 +52,7 @@ header nav{
 	top:30px;
 	right:10px;
 	width: 720px;
-	background: #fff;
-	position: relative;
+	background: #fff;	
 	z-index: 1;	
 }
 nav > ul > li{
