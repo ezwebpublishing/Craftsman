@@ -98,3 +98,17 @@ nav{
   /* 임시 */
 }
 ```
+#### 페이지250
+position: relative; 제거
+.slide-banner -> .banner
+```
+header nav{
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  width: 720px;
+  background: #fff;
+  /* position: relative; */
+  z-index: 1;
+}
+```
