@@ -78,34 +78,3 @@ footer .sns{
 	background: #222;
 }
 /* popup */
-#popup{
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	background:rgba(0,0,0,.6);
-	display: none;
-}
-#popup .popup_content{
-	width: 400px;
-	padding: 20px 20px 100px;
-	background: #fff;
-	border-radius:5px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform:translate(-50%, -50%);
-}
-#popup .popup_content .close{
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
-	background: #333;
-	color: #fff;
-	cursor: pointer;
-	padding: 5px 8px;
-}
-#popup.active{
-	display: block;
-}
