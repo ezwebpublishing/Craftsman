@@ -112,3 +112,19 @@ header nav{
   z-index: 1;
 }
 ```
+#### 페이지275
+문구 수정
+
+클래스명 slides에 클래스명 sliderwrapper를
+추가하고
+->
+클래스명 slides에 클래스명 slidewrapper를
+추가하고
+
+#### 페이지286
+문구수정
+즉 hreft -> 즉 href
+
+#### 페이지298
+//let tabContent = $('.tabcontent > div'); 라인 제거
+
