@@ -1,0 +1,266 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "맑은 고딕";
+    font-size: 14px;
+    color: #333;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+}
+.hidden{
+    display: none;
+}
+/* LAYOUT */
+.container{
+  width: 1340px;
+  margin:0 auto;
+}
+
+/* HEADER */
+header{
+  height: 100px;
+  position: relative;
+  z-index: 1;
+}
+header:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  right: 0;
+  height: 0;
+  background: #ebebeb;
+  transition: height 0.4s ease-in-out;
+  z-index: -1;
+}
+header.active:after{
+  height: 160px;
+}
+header > div{
+  display: flex;
+  justify-content: space-between;
+}
+header > div{
+  display: flex;
+  justify-content: space-between;
+}
+header .logo{
+  width: 200px;
+}
+header .logo a{
+  display: block;
+}
+header .main-menu{
+  display: flex;
+  padding-top: 60px;
+  margin-right: 20px;
+}
+header .main-menu > li{
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: darkcyan;
+  color:#fff;
+}
+header .sub-menu{
+  display: none;
+}
+header .sub-menu{
+  display: none;
+}
+header .main-menu > li:hover{
+  background: darkmagenta;
+}
+header .main-menu > li:hover a{
+  font-weight: bold;
+}
+header .main-menu a{
+  display: block;
+}
+header .main-menu > li:hover{
+  background: darkmagenta;
+}
+header .main-menu > li:hover a{
+  font-weight: bold;
+}
+header .sub-menu li:hover{
+  background: darkcyan;
+  color:#fff;
+}
+header .main-menu a{
+  display: block;
+}
+/* SLIDES */
+.slideWrapper{
+  height: 350px;
+  overflow: hidden;
+  position:relative;
+}
+.slideWrapper ul{
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.slideWrapper .slide{
+  height: 350px;
+}
+.slideWrapper .slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* MAIN */
+main{
+  position: relative;
+  z-index: 1;
+}
+main.container{
+  margin-top: -100px;
+}
+.quick-menu{
+  height: 100px;
+  padding: 10px 0;  
+  box-sizing: border-box;
+  background: rgba(0,0,0,.4);
+}
+.quick-menu ul{
+  display: flex;
+  justify-content: center;
+  gap:50px    
+}
+.quick-menu ul li{
+  width: 130px;
+}
+.quick-menu ul li img{
+  width: 100%;
+}
+.shortcut{
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  gap:20px;  
+}
+.shortcut > img{
+  width: 100px;
+}
+.shortcut-content{
+  flex:1;
+}
+.shortcut-content p{
+  width: 65%;
+}
+/* NEWS & GALLERY */
+.notice-gallery{
+  display: flex;
+  gap:10px;
+}
+#notice, #gallery{
+  padding: 15px 0px;
+  flex:1;
+}
+.notice-gallery h2{
+  border-radius: 5px 5px 0 0;
+  display: inline-block;
+  padding: 5px 10px;
+  background: #666;
+  color: #fff;
+  margin-bottom: -2px;
+}
+.notice-gallery ul{
+  border: 1px solid #666;
+}
+#notice ul li{
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.3s;
+  border-bottom: 1px dashed #ebebeb;
+  padding: 0 5px;
+}
+
+#notice ul li:last-child{
+  border-bottom: none;
+}
+
+#notice ul li:hover{
+  background: #ebebeb;
+}
+
+#notice ul li a:hover{
+  font-weight: bold;
+}
+#gallery ul{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 20px;
+}
+
+#gallery ul li{
+  transition: 0.3s;
+  text-align: center;
+}
+#gallery ul li img{
+  width: 100%;
+}
+#gallery ul li:hover{
+  opacity: 0.5;
+}
+/* FOOTER */
+footer{    
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.footer-logo{
+  width: 200px;
+}
+.copyright{
+  flex:1;
+}
+.family-site{
+  width: 250px;
+}
+.family-site select{
+  width: 100%;
+}
+/* popup */
+#popup{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none;
+  z-index:10;
+  background: rgba(0, 0, 0, .5);
+}
+#popup .popup-content{
+  width: 400px;
+  padding: 20px 20px 100px;
+  background: #fff;
+  border-radius: 5px;
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  box-shadow: 0 0 3pxrgba(0, 0, 0, .5);    
+}
+#popup .popup-content .close{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 8px;
+}
+#popup.active{
+  display: block;
+}
