@@ -42,6 +42,12 @@
 - CHAPTER 7 신유형 문제(E2형 - 실전)
 - CHAPTER 8 신유형 문제(E4형 - 실전)
 
+## 도서 구매
+##### [sdedu] (https://www.sdedu.co.kr/book/item.php?it_id=1724026195&cat_id=001009021)
+##### [yes24] (https://www.yes24.com/Product/Goods/136757366)
+##### [교보문고] (https://product.kyobobook.co.kr/detail/S000214657907)
+
+
 # 2024 SD에듀 유선배 웹디자인기능사 실기 과외노트
 
 ## PART 1 웹디자인기능사 실기 기본
@@ -85,9 +91,6 @@
 - CHAPTER 7 신유형 문제(E2형 - 실전)
 - CHAPTER 8 신유형 문제(E4형 - 실전)
 
-## 도서 구매
-##### [sdedu] (https://www.sdedu.co.kr/book/item.php?it_id=1645425753&cat_id=001009021)
-##### [yes24] (https://www.yes24.com/Product/Search?query=9791138321310&domain=BOOK)
 ------------
 
 ### 도서 오류 정정합니다. 
